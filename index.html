@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mozifilmek</title>
+    
+
 </head>
 <body>
-    <form>
+    <h1>Filmek</h1>
+    <form method="POST" action="index.html">
         <div>
             <label>Film cime: </label>
-            <input type="text" name="nev">
+            <input type="text" name="nev" id="nev">
         </div>
         <div>
             <label>Rendezo neve: </label>
-            <input type="text" name="rendezo">
+            <input type="text" name="rendezo" id="rendezo">
         </div>
         <div>
             <label>Kiadas eve: </label>
-            <input type="number" name="kiadas">
+            <input type="number" name="kiadas" id="kiadas">
         </div>
         <div>
-            <input type="submit" name="gomb" value="Hozzaadas">
+            <button type="button" name="button" onclick="hozzaad()">Hozzaadas</button>
+        </div>
+        <div>
+            <button type="button" name="button" onclick="listaz()">Listazas</button>
         </div>
     </form>
-
-<script src="main.js"></script>
+<div id="tablazat"></div>
 </body>
+<script src="main.js" charset="utf-8"></script>
 </html>
